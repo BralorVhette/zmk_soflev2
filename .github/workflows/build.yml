@@ -52,7 +52,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: SofleV2firmware
-          path: Sofle_left_nice_nano.uf2
+          path: sofle_left_nice_nano.uf2
       - name: West Build (Sofle Right)
         run: west build --pristine -s zmk/app -b nice_nano -- -DSHIELD=sofle_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 
